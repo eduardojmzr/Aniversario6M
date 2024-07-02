@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario</title>
+    <style>
+        body {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 30px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Feliz 6 meses de aniversario, eres lo mejor de mi vida DOC!</h1>
+    <p>Te amo hoy y mañana</p>
+    <div class="footer">
+        <p>Puebla, <span id="fecha"></span></p>
+    </div>
+    <script>
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaElegida = new Date('2024-06-02'); // Crear fecha específica: 2 de junio de 2024
+        document.getElementById('fecha').textContent = fechaElegida.toLocaleDateString('es-ES', options);
+    </script>
+</body>
+</html>
+
